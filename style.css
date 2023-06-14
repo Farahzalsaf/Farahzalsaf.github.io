@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+*{margin: 0;
+padding: 0;
+font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgb(227, 218, 248, 100%), rgb(201, 182, 242, 100%), rgb(216, 217, 242, 100%), rgb(242, 213, 242, 100%), rgb(201, 182, 242, 1));
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*::selection{
+    background-color: #f4d9eb ;
+    color: #fff;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #f3d6f2;
+    height: 25%;
+    width: 25%;
+    transition: background-color 0.5s linear;
+  
+  }
+  
+  html::-webkit-scrollbar-thumb:hover{
+    background-color: #f5c4ec;
+    transition: background-color 0.5s linear;
+  }
+  
+  html::-webkit-scrollbar-track{
+    background-color: #ffffff;
+  }
+  html::-webkit-scrollbar{
+    width: 12px;
+   
+  }
+/* ---------------------------------------------------------------top button-------------------------------------- */
+.i_button_top{
+    display: inline-block;
+    color: #fff !important;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
+.a_button_top{
+    display: none;
+    background: rgba(0,0,0,0.6);
+    border: 2px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 4500;
+    opacity: .5;
+}
+.a_button_top:hover{
+    background: rgb(0, 0, 0);
+    opacity: .5;
+}
+.a_button_top.scrollh{
+    display: block;
+    transition: display 0.5s linear;
+}
+
+/* ----------------------------------------------------------------end top button--------------------------------- */
+
+/* <!-- ------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------- nav ---------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------- --> */
+.nav-color{
+    color: #000000 !important;
+transition: color 0.5s ease-in-out;
+}
+.nav-color:hover{
+    color: #343434 !important;
+}
+.nav-linkcolor{
+    color: #4f2638 !important;
+    transition: color 0.5s ease-in-out , margin-left 0.5s ease-in-out;
+}
+.nav-linkcolor:hover{
+    color: #000000 !important;
+    margin-left: 5px;
+}
+.fixed-top.scrolled{
+    background-color:#E3DAF8 !important;
+    transition:background-color 0.5s linear;
+}
+.active{
+    color: #2f2f2f !important;
+    margin-left: 5px;
+}
+/* <!-- ------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------- nav ---------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------- --> */
+
+/* <!-- ------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------- header ---------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------- --> */
+.header-top{
+    padding-top: 16pc;
+    height: 100vh;
+}
+.header-font{
+    text-align: center;
+    font-family: 'quicksand';
+    line-height: 1.5;
+    display: inline;
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+  }
+  
+  @keyframes animatedBackground {
+      to {
+          background-size: 100% 100%;
+      }
+}
+.border-text{
+    background-color:rgb(201, 182, 242);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 3px 3px rgb(0, 0, 0, 34%);
+}
+/* <!-- ------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------- header ---------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------- --> */
+
+.pt-about{
+    padding-top: 9pc;
+}
+
+
+.card-section{
+    border-radius: 12px;
+    background: rgb(248,218,227);
+background: linear-gradient(180deg, rgb(201,182,242, 100%), rgb(201, 182, 242, 0%));
+box-shadow: 3px 3px rgb(0, 0, 0, 34%);
+}
+/* <!-- ------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------- section ---------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------- --> */
+
+.wrapper{
+    
+    transform: translate(-50%, -50%);
+  }
+
+  
+  
+
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta {
+      display: flex;
+      padding: 2px 9px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: white;
+      background: #C9B6F2;
+      transition: 1s;
+      box-shadow: 6px 6px 0 whitesmoke;
+      transform: skewX(-15deg);
+
+  }
+  
+  .cta:focus {
+     outline: none; 
+  }
+  
+  .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 #fae4ff;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .cta span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 0px;
+  }
+  
+  .cta:hover  span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 45px;
+  }
+  
+    span {
+      transform: skewX(15deg) 
+    }
+  
+    span:nth-child(2) {
+      width: 20px;
+      margin-left: 30px;
+      position: relative;
+      top:15%;
+    }
+    
+  /**************SVG****************/
+  
+  path.one {
+      transition: 0.4s;
+      transform: translateX(-60%);
+  }
+  
+  path.two {
+      transition: 0.5s;
+      transform: translateX(-30%);
+  }
+  
+  .cta:hover path.three {
+      animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover path.one {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover path.two {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.4s;
+  }
+  
+  /* SVG animations */
+  
+  @keyframes color_anim {
+      0% {
+          fill: white;
+      }
+      50% {
+          fill:#d438fb;
+      }
+      100% {
+          fill: white;
+      }
+  }
+
+
+
+  
+.h4-skills{
+    position: relative;
+    z-index: 2;  
+}
+.h4-skills::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    bottom: 2pc;
+    left: 0;
+
+}
+
+.h4-skills::before{
+    content: '';
+    text-align: center;
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 2pc;
+    left: 0; 
+   
+}
+.h4-exprince{
+    position: relative;
+    z-index: 2;  
+}
+
+.h4-exprince::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    bottom: 1pc;
+    left: 0;
+
+}
+.h4-exprince::before{
+    content: '';
+    text-align: center;
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 1pc;
+    left: 0; 
+   
+}
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- loading --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* 
+---------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------- loading --------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* text shadow */
